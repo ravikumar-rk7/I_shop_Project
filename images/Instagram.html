@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)http://127.0.0.1:5500/public/Website/Instagram.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="./Instagram_files/bootstrap-icons.css">
+    <link rel="stylesheet" href="./Instagram_files/bootstrap.css">
+    <style>
+        section{
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+            justify-content: center;
+            align-items: center;
+        }
+        form img{
+           width: 65%;
+           margin-left: 48px;
+        }
+        .insta1 img{
+            width: 100%;
+            margin-top: 20px;
+            margin-left: 100px;
+        }
+        form{
+            border:1px solid gainsboro;
+            width: 350px;
+            padding: 30px;
+            margin-top: 30px;
+            margin-left: 80px;
+        }
+        .font{
+            margin-left: 125px;
+        }
+        a{
+            text-decoration: none;
+           
+        }
+        .forget-password{
+            font-size: small;
+            margin-left: 70px;
+        }
+        .newaccount{
+            width: 55%;
+            padding: 20px;
+            border:1px solid gainsboro;
+            margin-left: 80px;
+        }
+        .newaccount span{
+            margin-left: 30px;
+        }
+        p{
+            margin-left: 220px;
+        }
+        .store{
+           display: flex;
+           margin-left: 130px;
+        }
+        footer{
+            margin-top: 50px;
+            margin-bottom: 20PX;
+        }
+        .list{
+            margin-top: 50px;
+            font-size: 13px;
+            margin-left: 250px;
+            justify-content: center;
+            align-items: center;
+            color: gray;
+        }
+        .list-1{
+            font-size: 13px;
+            margin-left: 500px;
+            justify-content: center;
+            align-items: center;
+            color: gray;
+        }
+        .list span{
+            margin-right: 15px;
+        }
+        .list-1 span{
+            margin-right: 15px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+    <div class="left-column">
+        <div class="insta1">
+            <img src="./Instagram_files/insta banner.png">
+        </div>
+    </div>
+    <div class="right-column">
+        <form>
+            <div><img src="./Instagram_files/insta logo.png"></div>
+            <div class="mt-5">
+                <lable class="form-label" name="Phone number,Username or, email">
+                <div>
+                     <input class="form-control" name="Phone number,Username or, email" placeholder="phone number,Username or, email">
+                </div>
+            </lable></div>
+            <div class="mt-2">
+                <lable class="form-label" name="password">
+                <div>
+                    <input class="form-control" name="password" placeholder="password">
+                </div>
+                <div class="mt-3">
+                    <button class="btn btn-primary w-100">Log in</button>
+                </div>
+                <div class="font mt-4">
+                   <font>OR</font>
+                </div>
+                <div class="mt-2 ms-5">
+                    <a href="https://www.facebook.com/"><span class="bi bi-facebook"></span>    <span>Log in with Facebook</span></a>
+                </div>
+                <div class="mt-3 ms-4">
+                    <a class="forget-password" href="https://www.instagram.com/accounts/password/reset/"><span>Forget password?</span></a>
+                </div>
+            </lable></div>
+        </form>
+        <div class="newaccount mt-3">
+            <span>Don't have an account?<a href="https://www.instagram.com/accounts/emailsignup/"> Sign up</a></span>
+        </div>
+        <div class="mt-3"><p>Get the app.</p></div>
+        <div class="store mt-3">
+            <a href="https://apps.apple.com/app/instagram/"><span class="me-4"><img src="./Instagram_files/Appstore.png" width="120" height="40"></span></a>
+            <a href="https://play.google.com/app/instgram/"><span class="pe-4"><img src="./Instagram_files/GooglePlay.png" width="120" height="40"></span></a>
+        </div>
+    </div>
+    </section>
+    <footer>
+        <div>
+            <div class="list">
+                <span>Meta</span>
+                <span>About</span>
+                <span>Blog</span>
+                <span>Jobs</span>
+                <span>Help</span>
+                <span>API</span>
+                <span>Privacy</span>
+                <span>Terms</span>
+                <span>Top Accounts</span>
+                <span>Hashtags</span>
+                <span>Locations</span>
+                <span>Instagram Lite</span>
+                <span>Contact uploading &amp; Non users</span>
+            </div>
+            <div class="list-1 mt-2">
+                <span>Dance</span>
+                <span>Food &amp; Drinks</span>
+                <span>Home &amp; Garden</span>
+                <span>Music</span>
+                <span>Visual Arts</span>
+                <div class="ms-4">
+                    <span class="me-3"> English</span>
+                    <span class="me-3 ms-3"> © 2022 Instagram from Meta</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

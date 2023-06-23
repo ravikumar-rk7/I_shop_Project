@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopper</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        header {
+            padding: 30px;
+            display: flex;
+            justify-content: space-between;
+            color: black;
+        }
+        .brand {
+            font-size: 30px;
+            font-family: Arial;
+            font-weight: bold;
+        }
+        .menu span {
+            font-size: 20px;
+            font-family: Arial;
+            font-weight: bold;
+            margin-right: 20px;
+        }
+        .symbols span {
+            margin-right: 20px;
+            font-size: 20px;
+            font-family: Arial;
+        }
+        article {
+            color: red;
+            background-color: black;
+            text-align: center;
+            font-family: Arial;
+            padding: 20px;
+        }
+        .heading {
+            margin-top: 5px;
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            font-family: Arial;
+            font-weight: bold;
+            font-size: 30px;
+            display: flex;
+        }
+        article {
+            background-color: white;
+            text-align: center;
+            font-family: Arial;
+            font-weight: bold;
+            font-size: 15px;
+            background-color: black;
+        }
+        main {
+            margin-top: 5px;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .men {
+            background-image: url(images/newfashionmen.jpg);
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            background-repeat: no-repeat;
+            height: 400px;
+            width: 100%;
+            align-items: center;
+        }
+        .kids {
+            background-image: url(images/);
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            background-repeat: no-repeat;
+            height: 400px;
+            width: 100%;
+            align-items: center;
+        }
+        .women {
+            background-image: url(images/8-business-woman-girl-png-image.png);
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            background-repeat: no-repeat;
+            height: 400px;
+            width: 100%;
+            align-items: center;
+        }
+        .button {
+            width: 150px;
+            font-size: 15px;
+            font-family: Arial;
+            font-weight: bold;
+            background-color: pink;
+            padding: 10px;
+            text-align: center;
+        }
+        h1 { 
+            font-family: Arial;
+            font-weight: bold;
+            text-align:right;
+            background-color:white;
+            color: black;
+        }
+        .highlights {
+            display: flex;
+            font-family: Arial;
+            justify-content: space-between;
+            padding: 20px;
+           
+        }
+        h3 {
+            color: red;
+        }
+        .head {
+            text-align: center;
+            margin-top: 30px;
+            padding: 50px;
+        }
+        .container {
+            display: flex;
+            justify-content:space-between;
+            padding: 10px;
+        }
+        .card {
+            display: grid;
+            grid-template-columns: 2;
+            height: 200%;
+            width: 100%;
+        }
+        footer {
+            background-color:black;
+            color: white;
+            width: 100%;
+            height: 80%;
+            text-align: center;
+        }
+        p1 {
+            font-family: Arial;
+            color: aliceblue;
+            margin-top: 10px;
+        }
+        p {
+            font-size: larger;
+            padding: 20px;
+        }
+        .socialicons {
+            margin-right: 10px;
+            font-family: Arial;
+            font-weight: bold;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+        .rightpannel {
+            padding-bottom: 20px;
+            display: flex;
+            justify-content: space-between; 
+            font-family: Arial;
+            margin-left: 10px;
+            padding: 10px;
+            padding-bottom: 20px;
+        }
+        .title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .collection {
+            display: grid;
+            grid-template-columns: 4fr 8fr;
+            margin: 50px;
+            height: 400px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .bag-collection-image {
+            background-image: url(images/bags.jpg);
+            box-shadow: 2px 3px 4px gray;
+            
+        }
+        .printed-shirts {
+            background-image: url(images/printed\ printed.jpg);
+            box-shadow: 2px 3px 4px gray;
+            align-content: center;
+            
+        }
+        .womendress {
+            display: grid;
+            grid-template-columns: 8fr 4fr;
+            white-space: 20px;
+            padding-top: 40px;
+            margin: 50px;
+            height: 400px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .womendress1 {
+            background-image: url(images/home-new-white-ginger-hawaiian-shirt-long-live-the-aloha-shirt_1400x.webp);
+            box-shadow: 2px 3px 4px gray;  
+        }
+        .sweatshirts {
+            background-image: url(images/best-cute-holiday-sweaters-for-women.jpg);
+            box-shadow: 2px 3px 4px gray;
+        }
+        .content{
+            text-indent: 20px;
+            font-family: system-ui;
+            font-size: 20px;
+            color: black;
+            padding: 10px;
+            margin: 10px;
+        }
+        .container{
+            margin: 10px;
+            font-family: Arial;
+            background-color: rgb(224, 224, 217);
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr 3fr;
+            justify-content: center;
+            text-align: center;
+        }
+        .image{
+            background-color: rgb(186, 224, 247);
+            font-family: Arial;
+            border-radius: 10%;
+            margin: 30PX;
+            padding: 20px;
+            box-shadow: 2PX 3PX 2PX lightslategray;
+        }
+        .image img{
+            border-radius: 50%;
+        }
+        nav div {
+            font-size: 30px;
+            color:white;
+            margin-bottom: 5px;
+        }
+        nav {
+            position: fixed;
+            right: 0px;
+            bottom: 0px;
+            width: 30px;
+            background-color: rgb(83, 83, 83);
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <div class="brand">
+        Shopper.
+    </div>
+    <div class="menu">
+        <span>Home</span>
+        <span>catalog</span>
+        <span>Shop</span>
+        <span>Pages</span>
+        <span>Blog</span>
+        <span>Docs</span>
+    </div>
+    <div class="symbols">
+        <span class="bi bi-search"></span>
+        <span class="bi bi-person"></span>
+        <span class="bi bi-heart"></span>
+        <span class="bi bi-cart3"></span>
+    </div>
+</header>
+<article>
+    <span class="bi bi-fire"></span> <span>HAPPY NEW YEAR DEALS ON EVERYTHING</span> <span class="bi bi-fire"></span>
+</article>
+    <main>
+        <div class="men">
+            <div>
+                <div class="button">Shop Men <span class="bi bi-chevron-right"></span> </div>
+            </div>
+        </div>
+        <div class="kids">
+            <div>
+                <div class="button">Shop Kids <span class="bi bi-chevron-right"></span> </div>
+            </div>
+        </div>
+        <div class="women">
+            <div>
+                <div class="button">Shop Women <span class="bi bi-chevron-right"></span> </div>
+            </div>
+        </div>
+    </main>
+    <div class="highlights">
+        <div>
+          <h3><span class="bi bi-truck"></span> FREE SHIPPING</h3>
+          <p>From all orders over $100</p>
+        </div>
+        <div>
+            <h3><span class="bi bi-arrow-repeat"></span>FREE RETURNS</h3>
+            <p>Return money within 30 days</p>
+        </div>
+        <div>
+            <h3><span class="bi bi-lock"></span>SECURE SHOPPING</h3>
+            <p>You're in safe hands</p>
+        </div>
+        <div>
+            <h3><span class="bi bi-tag"></span> Over 10,000 Styles</h3>
+            <p>We have everything you need</p>
+        </div>
+    </div>
+    <hr style="width: 80%;">
+    <!--BAG-->
+        <div class="head">
+            <div>
+               <p><font colour="gray" size="4" weight="bold">NEW COLLECTION</font></p>
+               <p><font face="arial" size="6" colour="black">Best Picks 2022</font></p>
+               <p><font face="Arial" size="3">Appear, dry there darkness they're seas, dry waters thing fly midst. Beast,<br> above fly brought Very green.</font></p>
+            </div>
+    <div class="collection">
+        <div class="bag-collection-image">
+            <h2>Bag Collection</h2>
+            <p>Shop Now <span class="bi bi-chevron-right"></span></p>
+        </div> 
+        <div class="printed-shirts">
+            <h2>Printed men's shirts</h2>
+            <p>Shop Now <span class="bi bi-chevron-right"></span></p>
+        </div>
+    </div>
+    <div class="womendress">
+            <div class="womendress1">
+              <h2>Basic Women's Dresses</h2>
+              <p>Shop Now <span class="bi bi-chevron-right"></span></p>
+            </div>
+            <div class="sweatshirts">
+                <h2>sweatshirts</h2>
+                <p>Shop Now <span class="bi bi-chevron-right"></span></p>
+            </div>
+        </div>
+    </div>
+</div>
+<nav>
+    <div><a href="https://www.facebook.com"><span class="bi bi-facebook"></span></a></div>
+    <div><a href="https://www.facebook.com"><span class="bi bi-facebook"></span></a></div>
+    <div><a href="https://www.facebook.com"><span class="bi bi-facebook"></span></a></div>
+    <a><div class="bi bi-linkedin"></div></a>
+    <a><div class="bi bi-instagram"></div></a>
+    <a><div class="bi bi-youtube"></div></a>
+    <a><div class="bi bi-twitter"></div></a>
+  </nav>
+</body>
+<hr>
+<div>
+    <!--- footwear----->
+    <h2>SOCIAL MEDIA NETWORK DETAILS</h2>
+    <div class="content">
+        <p class="bi bi-caret-right-fill"> Social media are interactive technologies that facilitate the creation and sharing of information, ideas, interests, and other forms of expression through virtual communities and networks. While challenges to the definition of social media arise due to the variety of stand-alone and built-in social media services currently available, there are some common features:Social media are interactive Web 2.0 Internet-based applications. User-generated content—such as text posts or comments, digital photos or videos, and data generated through all online interactions—is the lifeblood of social media. Users create service-specific profiles for the website or app that are designed and maintained by the social media organization. Social media helps the development of online social networks by connecting a user's profile with those of other individuals or groups.
+        </p>
+    </div>
+    <div class="container">
+            <div class="image">
+                <div>
+                    <a href="https://www.linkedin.com"><img src="images/icons/linkdin.jpg" width="100" height="100"></a>
+                    <h3>Linkdin</h3>
+                    <p>100cr+<br>Downloads</p>
+                <div class="star">
+                    <p>4.3 <span class="bi bi-star-fill"></span><br>24L rivews</p>
+                </div>
+                </div>
+             </div>
+             <div class="image">
+                 <a href="https://www.instagram.com/"><img src="images/icons/instagram.jpg" width="100" height="100">
+                 <h3>Instagram</h3></a>
+                 <p>100cr+<br>Downloads</p>
+                 <div class="star">
+                   <p>4.3 <span class="bi bi-star-fill"></span><br>13cr rivews</p>
+                 </div>
+              </div>
+              <div class="image">
+                 <img src="/./public/images/icons/spotify.jpg" width="100" height="100">
+                 <h3>Spotify</h3>
+                 <p>100cr+<br>Downloads</p>
+                 <div class="star">
+                    <p>4.3 <span class="bi bi-star-fill"></span><br>2cr rivews</p>
+                 </div>
+              </div>
+              <div class="image">
+                 <img src="/./public/images/icons/twitter.jpg" width="100" height="100">
+                 <h3>Twitter</h3>
+                 <p>100cr+<br>Downloads</p>
+                 <div class="star">
+                    <p>4.3 <span class="bi bi-star-fill"></span><br>1cr rivews</p>
+                 </div>
+              </div>
+    </div>
+</div>
+<footer>
+    <p><font face="arial" weight="bold" size="5">Want style Ideas and Treats?</font></p>
+    <p><input type="Enter Gmail" type="email"> <button>Subscribe</button></p>
+    <div class="leftpannel">
+        <div>
+           <div><font face="Arial" size="5" weight="bold">Shopper.</font></div>
+           <div class="socialicons">
+              <span class="bi bi-facebook"></span>
+              <span class="bi bi-instagram"></span>
+              <span class="bi bi-twitter"></span>
+              <span class="bi bi-youtube"></span>
+            </div>
+        </div>
+    </div>
+    <div class="rightpannel">
+        <div>
+            <div class="title">SUPPORT</div>
+            <div>Contact Us</div>
+            <div>FAQs</div>
+            <div>Size Guide</div>
+            <div>Shipping & Returns</div>
+        </div>
+        <div>
+            <div class="title">SHOP</div>
+            <div>Men's Shopping</div>
+            <div>Women's Shopping</div>
+            <div>Kids' Shopping</div>
+            <div>Discounts</div>
+        </div>
+        <div>
+            <div class="title">COMPANY</div>
+            <div>Careers</div>
+            <div>Terms & Conditions</div>
+            <div>Privacy & Cookie policy</div>
+        </div>
+        <div>
+            <div class="title">CONTACT</div>
+            <div>1-202-555-0105</div>
+            <div>1-202-555-0106</div>
+            <div>help@shopper.com</div>
+        </div>
+    </div>
+</footer>
+</html>
